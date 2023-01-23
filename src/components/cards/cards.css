@@ -1,0 +1,96 @@
+.cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.cards-carousel {
+  display: none;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  height: 511px;
+  margin-bottom: 100px;
+}
+
+.cards-carousel__card {
+  margin-bottom: 20px;
+  position: absolute;
+  /* display: none; */
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.cards-carousel__card.active {
+  /* display: block; */
+  opacity: 1;
+}
+
+.cards-carousel__card .btn {
+  width: 100%;
+}
+
+.cards-carousel__button {
+  position: absolute;
+  top: 50%;
+  /* transform: translateY(-50%); */
+  background: var(--ellipse-gradient);
+  color: var(--dark-color);
+  z-index: 2;
+  font-size: 2rem;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, 0.7);
+  padding: 7px;
+  box-sizing: content-box;
+}
+
+.cards-carousel__button.next {
+  right: -15px;
+}
+
+.cards-carousel__button.prev {
+  left: -15px;
+}
+
+@media screen and (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+    width: 90%;
+    margin: 0 auto;
+
+    display: none;
+  }
+
+  .cards-carousel {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cards-carousel {
+    margin-bottom: 80px;
+  }
+
+  .cards-carousel__button {
+    top: 40%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .cards-carousel {
+    margin-bottom: 60px;
+  }
+
+  .cards-carousel__button {
+    top: 30%;
+  }
+}

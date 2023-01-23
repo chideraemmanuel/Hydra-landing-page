@@ -1,0 +1,23 @@
+.back-to-top {
+  position: fixed;
+  bottom: 5%;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--button-gradient);
+  padding: 10px 20px;
+  border-radius: 5px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+  .back-to-top {
+    right: 20px;
+  }
+
+  .back-to-top span {
+    display: none;
+  }
+}

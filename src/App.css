@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  outline: 1px dotted var(--primary-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: 900px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 0 10px;
+  }
+}

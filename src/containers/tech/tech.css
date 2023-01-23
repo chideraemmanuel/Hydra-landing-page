@@ -1,0 +1,122 @@
+.tech {
+  margin-bottom: 50px;
+}
+
+.tech__header {
+  height: 303px;
+  border-radius: 160px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.tech__header--text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.tech__header--text span {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 44px;
+}
+
+.tech__header--icon {
+  position: absolute;
+  background: var(--ellipse-gradient);
+  font-size: 3rem;
+  border-radius: 50%;
+  border: 5px solid rgba(0, 0, 0, 0.8);
+  padding: 7px;
+  box-sizing: content-box;
+  color: var(--dark-color);
+
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.tech__details {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 40px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.tech__details--image {
+  max-width: 150px;
+  min-width: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .tech__header--text {
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  .tech__header--text span {
+    font-weight: 300;
+    font-size: 28px;
+  }
+
+  .tech__header--icon {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tech__header--icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .tech__header {
+    border-radius: 100px;
+  }
+
+  .tech__header--text {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .tech__header--text span {
+    font-weight: 300;
+    font-size: 25px;
+  }
+
+  .tech__header--icon {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tech__header--text {
+    font-size: 22px;
+  }
+
+  .tech__header--text span {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .tech__header--text {
+    font-size: 20px;
+  }
+
+  .tech__header--text span {
+    font-size: 20px;
+  }
+}
