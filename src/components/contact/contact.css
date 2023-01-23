@@ -88,6 +88,7 @@
   border-radius: 50%;
   padding: 3px;
   box-sizing: content-box;
+  z-index: 7;
 }
 
 .contact-carousel__btn.prev {
@@ -117,6 +118,7 @@
 .contact-carousel__item.active {
   /* display: flex; */
   opacity: 1;
+  z-index: 3;
 }
 
 .contact-carousel__item svg {
